@@ -9,11 +9,11 @@ export class HeaderComponent {
 
     @Output() featureClicked = new EventEmitter<string>();
 
-    onSelectStudent(){
-        this.featureClicked.emit('receipe');
+    onSelectStudent() {
+        this.featureClicked.emit('student');
     }
 
-    onSelectProfessor(){
-        this.featureClicked.emit('shopping');
+    onSelectProfessor() {
+        this.featureClicked.emit('professor');
     }
 }

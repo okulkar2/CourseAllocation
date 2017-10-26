@@ -2,7 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: './app.component.html'
 })
 
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  {
+  feature: string = 'student';
+
+  onFeatureSelected(data: string): void{
+    this.feature = data;
+  }
+
+
+}

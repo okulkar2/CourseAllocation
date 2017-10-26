@@ -3,9 +3,9 @@
 <div class="container">
 <div class="row">
   <div class="col-md-12">
-      <app-receipe-list *ngIf = 'feature === "receipe"'></app-receipe-list>
+      <app-student *ngIf = 'feature === "student"'></app-student>
     <br>
-      <app-shopping-list *ngIf = 'feature !== "receipe"'></app-shopping-list>
+      <app-professor *ngIf = 'feature !== "student"'></app-professor>
   </div>
 </div>
 </div>
