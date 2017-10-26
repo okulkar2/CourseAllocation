@@ -1,0 +1,11 @@
+<app-header 
+(featureClicked) = 'onFeatureSelected($event)'></app-header>
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+      <app-receipe-list *ngIf = 'feature === "receipe"'></app-receipe-list>
+    <br>
+      <app-shopping-list *ngIf = 'feature !== "receipe"'></app-shopping-list>
+  </div>
+</div>
+</div>
